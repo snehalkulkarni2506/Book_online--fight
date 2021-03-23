@@ -1,0 +1,36 @@
+<p id="notice"><%= notice %></p>
+<center>
+
+<p>
+  <strong>Name:</strong>
+  <%= @passanger.name %>
+</p>
+
+<p>
+  <strong>Contact:</strong>
+  <%= @passanger.contact %>
+</p>
+
+<p>
+  <strong>Age:</strong>
+  <%= @passanger.age %>
+</p>
+
+<p>
+  <strong>Email:</strong>
+  <%= @passanger.email_id %>
+</p>
+
+<p>
+  <strong>From to:</strong>
+  <%= @passanger.From_To %>
+</p>
+
+<p>
+  <strong>Timing:</strong>
+  <%= @passanger.timing %>
+</p>
+
+<%= link_to 'Edit', edit_passanger_path(@passanger) %> |
+<%= link_to 'Back', passangers_path %>
+</center>

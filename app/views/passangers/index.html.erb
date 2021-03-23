@@ -1,0 +1,39 @@
+<p id="notice"><%= notice %></p>
+<center>
+<h1>Passangers</h1>
+
+
+<table border="2px",class="table">
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Contact</th>
+      <th>Age</th>
+      <th>Email</th>
+      <th>From to</th>
+      <th>Timing</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @passangers.each do |passanger| %>
+      <tr>
+        <td><%= passanger.name %></td>
+        <td><%= passanger.contact %></td>
+        <td><%= passanger.age %></td>
+        <td><%= passanger.email_id %></td>
+        <td><%= passanger.From_To %></td>
+        <td><%= passanger.timing %></td>
+        <td><%= link_to 'Show', passanger %></td>
+        <td><%= link_to 'Edit', edit_passanger_path(passanger) %></td>
+        <td><%= link_to 'Destroy', passanger, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Passanger', new_passanger_path, class: "btn btn-primary" %>
+</center>

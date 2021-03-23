@@ -1,0 +1,31 @@
+<p id="notice"><%= notice %></p>
+<center>
+<p>
+  <strong>Name:</strong>
+  <%= @travel.name %>
+</p>
+
+<p>
+  <strong>Contact:</strong>
+  <%= @travel.contact %>
+</p>
+
+<p>
+  <strong>Fare:</strong>
+  <%= @travel.fare %>
+</p>
+
+<p>
+  <strong>From to:</strong>
+  <%= @travel.From_To %>
+</p>
+
+<p>
+  <strong>Timing:</strong>
+  <%= @travel.timing %>
+</p>
+
+
+<%= link_to 'Edit', edit_travel_path(@travel) %> |
+<%= link_to 'Back', travels_path %>
+</center>
